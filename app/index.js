@@ -43,16 +43,16 @@ conf.tunnels.forEach((tunnel) => {
     
 });
 
-throughs.forEach((tunnel) => {
-
-	const idx = conf.tunnels.indexOf(tunnel);
-	
-	tunnel2 = _.cloneDeep(tunnel);
-	tunnel2.ssh_host = tunnel2.through_ssh_host;
-	tunnel2.ssh_user = tunnel2.through_ssh_user;
-	tunnel2.ssh_port = tunnel2.through_ssh_port;
-    
-});
+// throughs.forEach((tunnel) => {
+//
+//     const idx = conf.tunnels.indexOf(tunnel);
+//
+//     tunnel2 = _.cloneDeep(tunnel);
+//     tunnel2.ssh_host = tunnel2.through_ssh_host;
+//     tunnel2.ssh_user = tunnel2.through_ssh_user;
+//     tunnel2.ssh_port = tunnel2.through_ssh_port;
+//
+// });
 
 let monitorPort = conf.monitor_port;
 
