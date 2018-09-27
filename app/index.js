@@ -57,7 +57,7 @@ conf.tunnels.forEach((tunnel) => {
 let monitorPort = conf.monitor_port;
 
 if (!monitorPort) {
-    monitorPort = rand(60000, 80000);
+    monitorPort = rand(40000, 60000);
 }
 
 conf.tunnels.forEach((tunnel, k) => {
